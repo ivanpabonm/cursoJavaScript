@@ -2,19 +2,182 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <script>
-        var nombre;
+
+        /* ----------------------------secuencia de control if---------------------------------   */
+        /* var nombre;
         var nota;
         nombre = prompt ('Ingrese nombre: ', '');
         nota = prompt ('Ingrese la nota', '');
         if (nota>4)
         {
             document.write(nombre + ' esta aprobado con una nota de :' + nota);
+        } */
+
+        /* ------------------------------secuencia de control if - else------------------------------ */
+        /* var v1, v2;
+        v1 = prompt('ingrese el valor 1: ' ,'');
+        v2 = prompt('ingrese el valor 2: ' ,'');
+        v1 = parseInt(v1);
+        v2 = parseInt(v2);
+        if(v1>v2)
+        {
+            document.write('El valor mayor es ', v1 )
         }
+        else
+        {
+            document.write('el valor mayor es ', v2);
+        } */
+
+        /* -----------------------------------if anidados------------------------------------------------ */
+        /* var n1, n2, n3, sum, prom;
+        n1 = prompt('ingrese nota 1: ', '');
+        n2 = prompt('ingrese nota 2: ', '');
+        n3 = prompt('ingrese nota 3: ', '');
+        sum = parseInt(n1) + parseInt(n2) + parseInt(n3);
+        prom = sum / 3;
+        if (prom >= 7)
+        {
+            document.write('promocionado');
+        }
+        else{
+            if(prom >= 4)
+            {
+                document.write('regular');
+            }
+            else
+            {
+                document.write('reprobado');
+            }
+        } */
+        /* --------------------------------------Operador && ('Y')-------------------------------------*/
+        /* var v1,v2,v3;
+        v1 = prompt('Ingrese valor 1: ', '');
+        v2 = prompt('Ingrese valor 2: ', '');
+        v3 = prompt('Ingrese valor 3: ', '');
+        v1 = parseInt(v1);
+        v2 = parseInt(v2);
+        v2 = parseInt(v2);
+        if (v1 > v2 && v1 > v3)
+        {
+            document.write('el numero mayor es: ', v1)
+        }
+        else
+        {
+            if(v2 > v3)
+            {
+                document.write('el numero mayor es: ', v2) 
+            }
+            else
+            {
+                document.write('el numero mayor es: ', v3)
+            }
+        } */
+        /* ----------------------------------Operador || ('O') ----------------------------------------- */
+        /* var dia, mes, anio,
+        dia = prompt('Ingrese el día', '');
+        mes = prompt('Ingrese el mes', '');
+        anio = prompt('Ingrese el año', '')
+        dia = parseInt(dia);
+        mes = parseInt(mes);
+        anio = parseInt (anio);
+        if (mes == 1 || mes == 2 || mes == 3)
+        {
+            document.write('fecha dia: ' + dia + ' mes: ' + mes + ' año: ' + anio)
+            document.write('<br>')
+            document.write("la fecha corresponde al primer trimestre del año")
+        }
+        else{
+            if(mes == 4 || mes == 5 || mes == 6)
+            {
+                document.write('fecha dia: ' + dia + ' mes: ' + mes + ' año: ' + anio)
+                document.write('<br>')
+                document.write("la fecha corresponde al segundo trimestre del año")
+            }
+            else{
+                if (mes == 7 || mes == 8 || mes == 9)
+                {
+                    document.write('fecha dia: ' + dia + ' mes: ' + mes + ' año: ' + anio)
+                document.write('<br>')
+                document.write("la fecha corresponde al tercer trimestre del año")
+                }
+                else
+                {
+                    document.write('fecha dia: ' + dia + ' mes: ' + mes + ' año: ' + anio)
+                document.write('<br>')
+                document.write("la fecha correspond al cuarto trimestre del año")
+                }
+            }
+        } */
+        /* ----------------------------switch case ------------------------------------------- */
+       /*  var v1;
+        v1 = prompt('Ingrese un numero de 1 a 5: ', ''),
+        v1 = parseInt(v1);
+        switch (v1){
+            case 1: document.write('uno');
+                break;
+            case 2: document.write('dos');
+                break;
+            case 3: document.write('tres');
+                break;
+            case 4: document.write('cuatro');
+                break;
+            case 5: document.write('cinco');
+                break;
+            default: document.write('debe ingresar un numero de 1 a 5');
+        } */
+        /* -------------------------------while-------------------------------------------------- */
+        /* var x = 2;
+        while (x<=100)
+        {
+            document.write(x);
+            document.write('<br>');
+            x=x+2;
+        } */
+        /* var x = 1;
+        var suma = 0;
+        var valor;
+        while(x <= 5)
+        {
+            valor = prompt('Digite numero :', '');
+            valor = parseInt(valor);
+            suma = suma + valor;
+            x++;
+        }
+        document.write('La suma de los valores es '+suma+'<br>'); */
+        /* ---------------------------------------Do While--------------------------------------------------- */
+        /* var valor;
+        do{
+            valor = prompt("digite un valor de 0 a 999");
+            valor = parseInt(valor);
+            document.write('el valor digitado ' + valor + (' tiene :'));
+            if (valor <=9)
+            {
+                document.write(' un digito');
+            }
+            else{
+                if (valor <= 99)
+                {
+                    document.write(' dos digitos');
+                }
+                else
+                {
+                    document.write(' tres digitos')
+                }
+            }document.write('<br>');
+        }while (valor != 0); */
+        /* ------------------------------------------for------------------------------------------------- */
+        var f;
+        for (f = 1; f<=10; f++)
+        {
+            document.write(f);
+            document.write('<br>');
+        }
+
     </script>
 </body>
 </html>
